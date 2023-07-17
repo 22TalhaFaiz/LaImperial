@@ -2,7 +2,39 @@
     font-family: 'Times New Roman', Times, serif;
 
 }
-.copyright{
+.copyright {
 
     text-decoration: solid;
 }
+.top1 {
+  text-decoration: solid;
+  color: black;
+}
+
+.ctu-title{
+  text-align: center;
+  margin: 5px 0 85px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+ /* Contact Us */
+.contact{
+    padding: 0 20px;
+ 
+}
+
+.ctu-inner{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  column-gap: 120px;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas: "ga1 ga2" "ga3 ga2";
+}
+.ctu-support{
+  grid-area: ga1;
+  padding: 40px 10px;
+  background-color: #C1C4CE;
+  text-align: center;
+  box-sizing: border-box;
+}
+
