@@ -13,82 +13,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <nav class="navbar navbar-brand">
-      <div class="left left-bars">
-        <div class="container col-12">
-          
-          <a class="navbar-brand" href="index.html">
-            <img src="images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png" alt="Test Image">
-          </a>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Shop</button>
-          <div class="dropdown-content">
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="column">
-                  <h5>Offers</h5>
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Product.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contactus.html">Contact</a>
+            </li>
+          </ul>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></a>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-  
-  
-  
-  
+                <div class="modal-body">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Mobile</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-  
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">TV & AV</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Home Appliance</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">IT</button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="Contactus.html" class="dropbtn" type="button">Contact Us</a>
-        </div>
-        <a href="#"><i class="fa fa-search"></i></a>
-        <a href="#"><i class="fa fa-cart-shopping"></i></a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-    </nav>
-    <section>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-      </ol>
+      </div>
     </nav>
   </section>
 
@@ -98,8 +65,8 @@
       <h2 class="font-weight-bold mb-2">Our Team</h2>
       <p class="font-italic text-muted mb-4">Contact out team if you want to resolve any problems</p>
     
-      <div class="row pb-5 mb-4">
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <div class="row pb-5 mb-4 text-muted">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 ">
           <!-- Card-->
           <div class="card shadow-sm border-0 rounded">
             <div class="card-body p-0"><img src="https://bootstrapious.com/i/snippets/sn-cards/profile-1_dewapk.jpg" alt="" class="w-100 card-img-top">
