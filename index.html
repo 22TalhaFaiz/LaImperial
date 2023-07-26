@@ -18,82 +18,67 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-brand">
-    <div class="left left-bars">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png" alt="Test Image">
-        </a>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Shop</button>
-        <div class="dropdown-content">
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <h5>Offers</h5>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Product.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contactus.html">Contact</a>
+          </li>
+        </ul>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-
-
-
-
+              <div class="modal-body">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">Mobile</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">TV & AV</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Home Appliance</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">IT</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a href="Contactus.html" class="dropbtn" type="button">Contact Us</a>
-      </div>
-      <div>
-      <a href="#"><i class="fa fa-search" id="search"></i></a>
-      </div>
-      <a href="#"><i class="fa fa-cart-shopping"></i></a>
-      <a href="#"><i class="fa-solid fa-user"></i></a>
+    </div>
   </nav>
 
+
+
+  <section>
+    <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
+      <swiper-slide> <img src="images/swip1.jpg" alt="" class="img-fluid"> </swiper-slide>
+      <swiper-slide><img src="images/saa.jpg" alt="" class="img-fluid"></swiper-slide>
+      <swiper-slide><img src="images/vvv.jpeg" alt="" class="img-fluid"></swiper-slide>
+      <swiper-slide><img src="images/swip4.webp" alt="" class="img-fluid"></swiper-slide>
+    </swiper-container>
+
+
+  </section>
   <section>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -101,148 +86,18 @@
       </ol>
     </nav>
   </section>
-
-  <section >
-    <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
-      <swiper-slide> <img src="images/swip1.jpg" alt="" class="img-fluid"> </swiper-slide>
-      <swiper-slide><img src="images/swip2.webp" alt="" class="img-fluid"></swiper-slide>
-      <swiper-slide><img src="images/swip3.webp" alt="" class="img-fluid"></swiper-slide>
-      <swiper-slide><img src="images/swip4.webp" alt="" class="img-fluid"></swiper-slide>
-      <swiper-slide>Slide 5</swiper-slide>
-      <swiper-slide>Slide 6</swiper-slide>
-      <swiper-slide>Slide 7</swiper-slide>
-      <swiper-slide>Slide 8</swiper-slide>
-      <swiper-slide>Slide 9</swiper-slide>
-    </swiper-container>
-  
-   
-  </section>
   <section>
     <div class="container py-5">
-      <!-- For Demo Purpose-->
-      <header class="text-center mb-5">
-        <h1 class="display-4 font-weight-bold">Bootstrap Cards</h1>
-        <p class="font-italic text-muted mb-0">An awesome Bootstrap 4 cards collection with variant content.</p>
-        <p class="font-italic text-muted">Snippet By <a href="https://bootstrapious.com" class="text-muted">
-            <u>Bootstrapious</u></a>
-        </p>
-      </header>
-    
-    
-      <!-- First Row [Prosucts]-->
-      <h2 class="font-weight-bold mb-2">From the Shop</h2>
-      <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-    
-      <div class="row pb-5 mb-4">
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <!-- Card-->
-          <div class="card rounded shadow-sm border-0">
-            <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
-              <h5> <a href="#" class="text-dark">Awesome product</a></h5>
-              <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <ul class="list-inline small">
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <!-- Card-->
-          <div class="card rounded shadow-sm border-0">
-            <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
-              <h5> <a href="#" class="text-dark">Awesome product</a></h5>
-              <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <ul class="list-inline small">
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <!-- Card-->
-          <div class="card rounded shadow-sm border-0">
-            <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-3_rk25rt.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
-              <h5> <a href="#" class="text-dark">Awesome product</a></h5>
-              <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <ul class="list-inline small">
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <!-- Card-->
-          <div class="card rounded shadow-sm border-0">
-            <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
-              <h5> <a href="#" class="text-dark">Awesome product</a></h5>
-              <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <ul class="list-inline small">
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
-                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <h1 class="display-4 font-weight-bold text-center">Featured</h1>
+      <div class="row g-4" id="test">
       </div>
-    
-    
-    
     </div>
   </section>
   <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12">
-          <h1> Mobile </h1>
-          <!-- Tabs navs -->
-          <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="tab" href="#ex1-tabs-1" role="tab"
-                aria-controls="ex1-tabs-1" aria-selected="true">Galaxy s23 Ultra</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="tab" href="#ex1-tabs-2" role="tab"
-                aria-controls="ex1-tabs-2" aria-selected="false">Tab 2</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="tab" href="#ex1-tabs-3" role="tab"
-                aria-controls="ex1-tabs-3" aria-selected="false">Tab 3</a>
-            </li>
-          </ul>
-          <!-- Tabs navs -->
+    <div class="container py-5">
+      <h1 class="display-4 font-weight-bold text-center">TV</h1>
+      <div class="row g-4" id="test2">
 
-          <!-- Tabs content -->
-          <div class="tab-content" id="ex1-content">
-            <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
-              
-            </div>
-            <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
-              Tab 2 content
-            </div>
-            <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
-              Tab 3 content
-            </div>
-          </div>
-          <!-- Tabs content -->
-        </div>
       </div>
     </div>
   </section>
@@ -285,7 +140,57 @@
     </section>
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="js/variable.js"></script>
+    <script>
+      for (i of featured) {
+        $("#test").append(`
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <!-- Card-->
+          <div class="card rounded shadow-sm border-1 h-100">
+            <div class="card-body p-4 d-flex flex-column"> <!-- Add d-flex and flex-column classes -->
+              <img src="${i.imgsrc}" class="card-img-top mb-3" alt="" class="img-fluid d-block mx-auto">
+              <h5><a href="#" class="text-dark">${i.name}</a></h5>
+              <p class="small text-muted font-italic">${i.desc}</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              </ul>
+              <h5><a href="#" class="text-dark">${i.price}</a></h5>
+              <a href="Product.html" class="btn btn-primary mt-auto" type="button">Buy Now</a> 
+            </div>
+          </div>
+        </div>
+        `)
+      }
+      for (i of tv) {
+        $("#test2").append(`
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <!-- Card-->
+          <div class="card rounded shadow-sm border-1 h-100">
+            <div class="card-body p-4 d-flex flex-column"> <!-- Add d-flex and flex-column classes -->
+              <img src="${i.imgsrc}" class="card-img-top mb-3" alt="" class="img-fluid d-block mx-auto">
+              <h5><a href="#" class="text-dark">${i.name}</a></h5>
+              <p class="small text-muted font-italic">${i.desc}</p>
+              <ul class="list-inline small">
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+              </ul>
+              <h5><a href="#" class="text-dark">${i.price}</a></h5>
+              <a href="Product.html" class="btn btn-primary mt-auto" type="button">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        `)
+      }
+    </script>
 </body>
 
 </html>
