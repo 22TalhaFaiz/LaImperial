@@ -36,14 +36,13 @@
     </nav>
 
 
-    <!-- Product card with "Buy Now" and "Compare" buttons -->
     <div class="card  mb-5 m-auto" style="width: 18rem;">
         <img src="" class="card-img-top" alt="Product Image" id="img">
         <div class="card-body text-dark">
             <h5 class="card-title" id="name"></h5>
             <p class="card-text" id="desc"></p>
-            <button class="btn btn-primary" onclick="buyNow()">Buy Now</button>
-            <button class="btn btn-secondary" onclick="addToCompare()">Compare</button>
+            <a class="btn btn-primary mt-auto"><i class="fas fa-shopping-cart"> Buy Now</i></a>
+            <a class="btn btn-danger" href="compare.html"><i class="fa-solid fa-code-compare" style="color: #e78a08;"> Compare </i></a>
         </div>
     </div>
 
@@ -63,22 +62,7 @@
                 document.getElementById('name').innerText = i.name;
                 document.getElementById('desc').innerText = i.desc;
                 document.getElementById('img').src = i.imgsrc;
-                // Set product details in the card
-                document.getElementById('cardName').innerText = i.name;
-                document.getElementById('cardDesc').innerText = i.desc;
-                document.getElementById('cardImg').src = i.imgsrc;
             }
-        }
-        // Function to handle "Buy Now" button click
-        function buyNow() {
-            // Add your logic to handle "Buy Now" functionality here
-            // For example, redirect to a checkout page or show a success message
-        }
-
-        // Function to handle "Compare" button click
-        function addToCompare() {
-            // Add your logic to handle "Compare" functionality here
-            // For example, add the product to the compare list and show a confirmation message
         }
     </script>
 </body>

@@ -30,7 +30,7 @@
   </script>
 
 
-  <section>
+  <section class="mt-2">
     <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
       <swiper-slide> <img src="images/swip1.jpg" alt="" class="img-fluid"> </swiper-slide>
       <swiper-slide><img src="images/saa.jpg" alt="" class="img-fluid"></swiper-slide>
@@ -90,6 +90,7 @@
               </ul>
               <h5><a href="#" class="text-dark">${i.price}</a></h5>
               <a class="btn btn-primary mt-auto"href="productDetail.html?id=${i.id}"><i class="fas fa-shopping-cart"> Buy Now</i></a>
+              <a href="compare.html"><i class="fa-solid fa-code-compare" style="color: #e78a08;"> Compare </i></a>
 
             </div>
           </div>
@@ -101,7 +102,8 @@
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <!-- Card-->
           <div class="card rounded shadow-sm border-1 h-100">
-            <div class="card-body p-4 d-flex flex-column"> <!-- Add d-flex and flex-column classes -->
+            <div class="card-body p-4 d-flex flex-column">
+
               <img src="${i.imgsrc}" class="card-img-top mb-3" alt="" class="img-fluid d-block mx-auto">
               <h5><a href="#" class="text-dark">${i.name}</a></h5>
               <a href="productDetail.html?id=${i.id}"><i class="fas fa-eye"></i></a>
@@ -114,6 +116,7 @@
               </ul>
               <h5><a href="#" class="text-dark">${i.price}</a></h5>
               <a class="btn btn-primary mt-auto"href="productDetail.html?id=${i.id}"><i class="fas fa-shopping-cart"> Buy Now</i></a>
+              <a href="compare.html"><i class="fa-solid fa-code-compare" style="color: #e78a08;"> Compare </i></a>
             </div>
           </div>
         </div>

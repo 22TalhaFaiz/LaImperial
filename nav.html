@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/navbar.css">
+
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Product.html">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Product.html">Shops</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-            </ul>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></a>
-    
-            <!-- Modal -->
-            <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="searchModalLabel">Search</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                  </div>
-                </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+        </ul>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-      
+      </div>
+    </div>
+  </nav>
 </body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container nav2">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Haier
+          </a>
+          <div class="dropdown-menu" aria-labelledby="shopDropdown">
+            <a class="dropdown-item" href="haiderp.html">All Haier Products</a>
+            <a class="dropdown-item" href="haiderp.html">TV</a>
+            <a class="dropdown-item" href="haiderp.html">Refrigerator</a>
+            <a class="dropdown-item" href="haiderp.html">Washing Machines</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Samsung
+          </a>
+          <div class="dropdown-menu" >
+            <a class="dropdown-item" href="#">All Samsung Products</a>
+            <a class="dropdown-item" href="#">TV</a>
+            <a class="dropdown-item" href="#">Refrigerator</a>
+            <a class="dropdown-item" href="#">Washing Machines</a>
+          </div>
+        </li>
+
+        <!-- Dropdown for "TV & AV" -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dawnlance
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">All Dawnlance Products</a>
+            <a class="dropdown-item" href="#">TV</a>
+            <a class="dropdown-item" href="#">Refrigerator</a>
+            <a class="dropdown-item" href="#">Washing Machines</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
 </html>
