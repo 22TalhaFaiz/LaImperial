@@ -7,10 +7,10 @@
     text-decoration: solid;
 }
 
+
 /* Navbar container */
 .navbar {
   font-family: Arial;
-  width: 100%;
   background-color: black;
 }
 .navbar img{
@@ -24,7 +24,6 @@
   font-size: 16px;
   color: black;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -86,4 +85,12 @@
 td img{
   width: 200px;
   height: 250px;
+}
+.button-container {
+  display: inline-block;
+  margin-top: 10px; /* Adjust the spacing between the buttons and other content */
+}
+
+.button-container .btn {
+  margin-right: 5px; /* Adjust the spacing between the buttons */
 }

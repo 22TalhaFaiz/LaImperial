@@ -1,0 +1,34 @@
+/* Custom CSS to reduce the navbar size */
+.navbar {
+    padding: 8px; /* Reduce top and bottom padding */
+  }
+
+  .navbar-brand img.logo {
+    height: 40px; /* Reduce the logo size */
+  }
+
+  .navbar-toggler {
+    padding: 4px 8px; /* Reduce padding around the toggle button */
+    font-size: 18px; /* Adjust the toggle button font size */
+  }
+
+  .navbar-collapse {
+    margin-top: 8px; /* Reduce margin between navbar and dropdown menus */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px; /* Adjust font size of navigation links */
+    padding: 4px 8px; /* Reduce padding around navigation links */
+  }
+
+  .dropdown-menu {
+    font-size: 14px; /* Adjust font size of dropdown menu items */
+  }
+
+  .modal-title {
+    font-size: 18px; /* Adjust font size of modal title */
+  }
+
+  .modal-body input {
+    font-size: 14px; /* Adjust font size of search input */
+  }

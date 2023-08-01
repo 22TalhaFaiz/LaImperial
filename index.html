@@ -24,7 +24,7 @@
 <body>
   <div id="navi"></div>
   <script>
-    $.get('nav.html',function(response){
+    $.get('nav.html', function (response) {
       $("#navi").html(response)
     })
   </script>
@@ -64,16 +64,16 @@
   </section>
   <div id="footer"></div>
   <script>
-      $.get('footer.html', function (response) {
-          $("#footer").html(response)
-      })
+    $.get('footer.html', function (response) {
+      $("#footer").html(response)
+    })
   </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <script src="js/variable.js"></script>
-    <script>
-      for (i of featured) {
-        $("#test").append(`
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="js/variable.js"></script>
+  <script>
+    for (i of featured) {
+      $("#test").append(`
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <!-- Card-->
           <div class="card rounded shadow-sm border-1 h-100">
@@ -89,16 +89,18 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
               </ul>
               <h5><a href="#" class="text-dark">${i.price}</a></h5>
-              <a class="btn btn-primary mt-auto"href="productDetail.html?id=${i.id}"><i class="fas fa-shopping-cart"> Buy Now</i></a>
-              <a href="compare.html"><i class="fa-solid fa-code-compare" style="color: #e78a08;"> Compare </i></a>
-
+              <div>
+                <a class="btn btn-dark mt-auto "href="productDetail.html?id=${i.id}"><i class="fas fa-shopping-cart"> Buy Now</i>
+                </a>
+              <a href="compare.html"><i class="fa-solid fa-code-compare" style="color: black;"></i></a>
+                </div>
             </div>
           </div>
         </div>
         `)
-      }
-      for (i of tv) {
-        $("#test2").append(`
+    }
+    for (i of tv) {
+      $("#test2").append(`
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
           <!-- Card-->
           <div class="card rounded shadow-sm border-1 h-100">
@@ -115,15 +117,18 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
               </ul>
               <h5><a href="#" class="text-dark">${i.price}</a></h5>
-              <a class="btn btn-primary mt-auto"href="productDetail.html?id=${i.id}"><i class="fas fa-shopping-cart"> Buy Now</i></a>
-              <a href="compare.html"><i class="fa-solid fa-code-compare" style="color: #e78a08;"> Compare </i></a>
+              <div>
+                <a class="btn btn-dark mt-auto "href="productDetail.html?id=${i.id}"><i class="fas fa-shopping-cart"> Buy Now</i>
+                </a>
+              <a href="compare.html"><i class="fa-solid fa-code-compare" style="color: black;"></i></a>
+                </div>
             </div>
           </div>
         </div>
 
         `)
-      }
-    </script>
+    }
+  </script>
 </body>
 
 </html>

@@ -74,14 +74,14 @@
 
         </div>
     </div>
-    <script src="/js/data.js"></script>
+    <script src="/js/variable.js"></script>
     <script>
         for (var i = 1; i < all_products.length; i++) {
             document.getElementById("select1").innerHTML += `
-            <option value="${i}">${all_products[i].name}</option>
+            <option value="${all_products[i].id}">${all_products[i].name}</option>
             `;
             document.getElementById("select2").innerHTML += `
-            <option value="${i}">${all_products[i].name}</option>
+            <option value="${all_products[i].id}">${all_products[i].name}</option>
             `;
 
 
