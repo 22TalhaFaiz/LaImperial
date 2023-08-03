@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -47,7 +46,10 @@
               </div>
               <div class="modal-body">
                 <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <div class="ui-widget">
+                    <label for="tags">Tags: </label>
+                    <input class="form-control me-2" type="search" id="tags" placeholder="Search" aria-label="Search">
+                  </div>
                   <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
                 </form>
               </div>
