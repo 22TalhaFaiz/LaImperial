@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <title>LaImperial</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -17,63 +17,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        td img {
+            width: 350px;
+            height: 250px;
+        }
+        th{
+            padding: 20px 20px 20px 20px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="navi"></div>
     <script>
-      $.get('nav.html',function(response){
-        $("#navi").html(response)
-      })
+        $.get('nav.html', function (response) {
+            $("#navi").html(response)
+        })
     </script>
 
-    <h1 class="display-5 my-5 text-center">Compare List</h1>
-    <div class="container">
-        <div class="col-md-9 mx-auto">
-            <table class="table">
-                <tr class="bg-light">
-                    <th>Select Product</th>
-                    <th width="300px">
-                        <select class="form-control" id="select1" onchange="item1(this.value)">
-                            <option value="0">---Select Product---</option>
-                        </select>
-                    </th>
-                    <th>Select Product</th>
-                    <th width="300px">
-                        <select class="form-control" id="select2" onchange="item2(this.value)">
-                            <option value="0">---Select Product---</option>
-                        </select>
-                    </th>
-                </tr>
-                <tr>
-                    <th>Product Image</th>
-                    <td>
-                        <img src="images/No-Image-Placeholder.svg.png" alt="" id="img1">
-                    </td>
-                    <th>Product Image</th>
-                    <td>
-                        <img src="images/No-Image-Placeholder.svg.png" alt="" id="img2">
-                    </td>
-                </tr>
-                <tr>
-                    <th>Price </th>
-                    <td id="price1">N/A</td>
-                    <td id="price2">N/A</td>
-                </tr>
-                <tr>
-                    <th>Description</th>
-                    <td id="desc1">N/A</td>
-                    <td id="desc2">N/A</td>
-                </tr>
-                <tr>
-                    <th>Brand</th>
-                    <td id="brand1">N/A</td>
-                    <td id="brand2"> N/A</td>
-                </tr>
-            </table>
-
-        </div>
+<h1 class="display-5 my-5 text-center">Compare List</h1>
+<div class="container">
+    <div class="col-md-9 mx-auto">
+        <table class="table">
+            <tr class="bg-light">
+                <th>Select Product</th>
+                <th>
+                    <select class="form-control" id="select1" onchange="item1(this.value)">
+                        <option value="0">---Select Product---</option>
+                    </select>
+                </th>
+                <th >Select Product</th>
+                <th>
+                    <select class="form-control" id="select2" onchange="item2(this.value)">
+                        <option value="0">---Select Product---</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>Product Image</th>
+                <td>
+                    <img src="images/No-Image-Placeholder.svg.png" alt="" id="img1">
+                </td>
+                <!-- Add some space between the two product images -->
+                <th style="padding-left: 30px;">Product Image</th>
+                <td>
+                    <img src="images/No-Image-Placeholder.svg.png" alt="" id="img2">
+                </td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td id="price1">N/A</td>
+                <td id="price2">N/A</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td id="desc1">N/A</td>
+                <td id="desc2">N/A</td>
+            </tr>
+            <tr>
+                <th>Brand</th>
+                <td id="brand1">N/A</td>
+                <td id="brand2">N/A</td>
+            </tr>
+        </table>
     </div>
+</div>
+
     <script src="/js/variable.js"></script>
     <script>
         for (var i = 1; i < all_products.length; i++) {
@@ -87,7 +97,7 @@
 
         }
         function item1(a) {
-           var select2 = document.getElementById("select2").value;
+            var select2 = document.getElementById("select2").value;
             if (a != select2) {
 
                 document.getElementById("img1").src = all_products[a].imgsrc;
@@ -118,7 +128,7 @@
                 document.getElementById("price2").innerHTML = ""
                 document.getElementById("desc2").innerHTML = ""
                 document.getElementById("brand2").innerHTML = ""
-                
+
             }
         }
     </script>
@@ -129,4 +139,5 @@
         $("#footer").html(response)
     })
 </script>
+
 </html>
