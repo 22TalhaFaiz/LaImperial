@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
+  <link rel="icon" type="image/x-icon" href="/images/8480075711_8d2a7a35-f43c-4751-8c79-7a68834d763c.png">
   <link rel="stylesheet" href="/css/contactus.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -30,43 +31,55 @@
           <li class="breadcrumb-item active" aria-current="page">Contact Us </li>
       </ol>
   </nav>
-
-  <div class="container border-3">
-    <h1>Contact Us</h1>
-    <h4>If You have any problems Please Contact us with the given Information below</h4>
-    <div class="contact-info">
-      <p><i class="fas fa-map-marker-alt"></i> Aptech North Nazimabad, Karachi</p>
-      <p><i class="fas fa-phone"></i> Phone: 0305-5412502</p>
+<section>
+  <div class="container">
+    <div class="well well-sm">
+      <h3><strong>Contact Us</strong></h3>
     </div>
-    <form id="contactForm" onsubmit="sweetAlert()">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required="true">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required="true">
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required="true"></textarea>
-      </div>
-      <button type="submit" >Send Message</button>
-    </form>
-  </div>
-  <div id="footer"></div>
-  <script>
-      $.get('footer.html', function (response) {
-          $("#footer").html(response)
-      })
-  </script>
-  <script src="/js/contactus.js"></script>
-  <script>
-    function sweetAlert() {
-      Swal.fire('Email','Email Has Been Sent Successfully','success');
-      event.preventDefault();
-    }
-  </script>
+    <div class="row">
+      <div class="col-md-7">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1377120008347!2d67.0304584761308!3d24.927378142575222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1691441996860!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+      </div>
+      <div class="col-md-5">
+        <h3>Get in Touch</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Aptech North Nazimabad, Karachi</p>
+            <p><i class="fas fa-phone"></i> Phone: 0305-5412502</p>
+          </div>
+          <form id="contactForm" onsubmit="sweetAlert()">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required="true">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required="true">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required="true"></textarea>
+            </div>
+            <button type="submit" >Send Message</button>
+          </form>
+
+      </div>
+      
+    </div>
+  </div>
+</section>
+<div id="footer"></div>
+<script>
+    $.get('footer.html', function (response) {
+        $("#footer").html(response)
+    })
+</script>
+<script src="/js/contactus.js"></script>
+<script>
+  function sweetAlert() {
+    Swal.fire('Email','Email Has Been Sent Successfully','success');
+    event.preventDefault();
+  }
+</script>
 </body>
 </html>
